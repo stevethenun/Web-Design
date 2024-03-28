@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+ 
+    <title>Steve-A03</title>
+</head>
+<body>
+    <header>
+        <h1>Puchase Records</h1>
+        <nav id="mobile_menu"></nav>
+        <nav id = nav_menu>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+        <section>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="name@email.com">
+                <span id="emailError">*</span>
+            </div>
+            <div>
+                <label for="date">Purchase Date: </label>
+                <input type="date" name="date" id="date" >
+                <span id="dateError">*</span>
+            </div>
+            <div>
+                <label for="purchase_amount">Purchase Amount: </label>
+                <input type="text" name="purchase_amount" id="purchase_amount" placeholder="22.22">
+                <span name ="amountError" id="amountError">*</span>
+            </div>
+            <div>
+                <label for="discount_type">Type of Discount:</label>
+                <select name="discount_type" id="discount_type">
+                    <option value="none">None</option>
+                    <option value="military">Military</option>
+                    <option value="student">Student</option>
+                    <option value="aarp">AARP</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" id="processInformation"  value="Process">
+            </div>
+            <div>
+                <input type="button" id="reset"  value="Reset">
+            </div>
+            <div>
+                <label for="discounted_price">Discounted Price:</label>
+                <input type="text" name="discounted_price" id="discounted_price" readonly>
+                <span></span>
+            </div>
+        </fieldset>
+
+        </section>
+    </main>
+</body>
+<script src="../js/purchase.js"></script>

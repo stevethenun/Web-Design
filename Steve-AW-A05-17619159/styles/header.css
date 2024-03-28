@@ -1,0 +1,27 @@
+body{
+    border-radius: 20px;
+}
+header{
+    background-color: lightsteelblue;
+    border-bottom: 2px solid lightsteelblue;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    margin-bottom: 1.25em;
+}
+header h1{
+    color: #095bb9;
+    padding: 0.5em;
+    border-bottom: 2px solid steelblue;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder
+}
+#nav_menu{
+    border-bottom: 2px solid steelblue;
+    background-color: steelblue;
+}
+#nav_menu ul{
+    list-style: none;
+    margin: 0;
+}
