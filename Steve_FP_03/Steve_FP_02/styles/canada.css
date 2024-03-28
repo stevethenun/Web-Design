@@ -1,5 +1,4 @@
 body {
-    background-image: url("../images/sunset.png");
     background-size: cover;
 }
 
@@ -29,9 +28,9 @@ header h1 {
     transition: max-height .7s ease-out, visibility .7s ease-out;
 }
 img {
-    margin-left: 36em;
-    height: 531px;
-    width: 360px;
+    margin-left: 23em;
+    height: 736px;
+    width: 500px;
 }
 main{
     display: flex;
@@ -198,11 +197,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    img {
-        margin-left: 0;
-        height: 531px;
-        width: 360px;
-    }
     ul{
         display: flex;
         flex-direction: column;
