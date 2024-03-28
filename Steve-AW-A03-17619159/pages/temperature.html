@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+ 
+    <title>Steve-A03</title>
+</head>
+<body>
+    <header>
+        <h1>Convert Temps</h1>
+        <nav id="mobile_menu"></nav>
+        <nav id = nav_menu>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/temperature.html"class="current" >Temperature</a></li>
+                <li><a href="../pages/grades.html">Grades</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+        <section>
+            <div class="radios">
+                <input type="radio" name="conversion_type" id="to_celsius" checked>
+                <label for="to_celsius">Fahrenheit to Celsius</label>
+            </div>
+            <div class="radios">
+                <input type="radio" name="conversion_type" id = "to_fahrenheit">
+                <label for="to_fahrenheit">Celsius to Fahrenheit</label>
+            </div>
+            <div class="inputs">
+                <label for="degrees_entered" id="degree_label_1">Enter Fahrenheit: </label>
+                <input type="text" id="degrees_entered">
+            </div>
+            <div class="inputs">
+                <label for="degrees_computed" id="degree_label_2">Degrees Celsius: </label>
+                <input type="text" id="degrees_computed" disabled>
+            </div>
+            <div>
+                <input class="button" type="submit" id = "convert"  value="Convert"/>
+            </div>
+            <div>
+                <input class="button" type="submit" id = "clear"  value="Clear"/>
+            </div>
+        </fieldset>
+
+        </section>
+    </main>
+</body>
+<script src="../js/temps.js"></script>

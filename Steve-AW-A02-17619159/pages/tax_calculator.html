@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+ 
+    <title>A01: 1.0 Assignments</title>
+</head>
+<body>
+    <header>
+        <h1>Sales Tax Calculater</h1>
+    
+    <nav id="mobile_menu"></nav>
+    <nav id = nav_menu>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/change.html" >Change Calculator</a></li>
+            <li><a href="../pages/tax_calculator.html"class="current">Tax Calculator</a></li> 
+        </ul>
+    </nav>
+    </header> 
+    <main>
+        <fieldset>
+            <legend>Enter Subtotal and Tax Rate: </legend>
+            <div class="required-container">
+                <label>Subtotal: </label>
+                <input type="text" id="subtotal" value="" name="subtotal">
+            </div>
+            <div class="required-container">
+                <label>Tax Rate: </label>
+                <input type="text" id="taxRate" value="" name="taxRate">
+            </div>
+            <div><input class="button" type="submit" id = "calculate"  value="Calculate" /><br>
+            <input class="button" type="submit" id = "clear" value="Clear" />
+            </div>
+            <div class="required-container">
+                <label>Sales Tax: </label>
+                <input type="text" id="taxSubTotal" value="" name="taxSubTotal" disabled>
+            </div>
+            <div class="required-container">
+                <label>Total: </label>
+                <input type="text" id="total" value="" name="total" disabled>
+            </div>
+        </fieldset>
+        <script src="../js/sales_tax.js"></script>
+    </main> 
+</body>
+</html>

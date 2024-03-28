@@ -1,0 +1,13 @@
+header{
+   background-image: linear-gradient(to bottom,white 0%, lightsteelblue 100%);
+}
+main{
+    padding: 3%;
+}
+
+a:link,a:visited{
+    color:maroon;
+}
+a:focus,a:hover{
+    color: #ff8200;
+}

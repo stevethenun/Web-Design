@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <title>A02: 1.0 Assignments</title>
+    
+</head>
+<body>
+	<header>
+        <h1>Change Calculater</h1>
+    
+    <nav id="mobile_menu"></nav>
+    <nav id = nav_menu>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/change.html"class="current" >Change Calculater</a></li>
+            <li><a href="../pages/tax_calculator.html">Tax Calculater</a></li> 
+        </ul>
+    </nav>
+    </header> 
+		<main>
+            <div class="required-container">
+                <label>Enter the amount of change due (1-99) </label>
+                <input class="input" type="text" id="changeAmount" value="" name="changeAmount">
+                <input type="submit" id = "calculateChange"  value="Calculate" />
+            </div>
+			<fieldset>
+                <legend>Change Distribution: </legend>
+                <div class="required-container">
+                    <label>Quarters: </label>
+                    <input type="text" id="quarters" value="" name="quarters"disabled>
+                </div>
+                
+                <div class="required-container">
+                    <label>Dimes: </label>
+                    <input type="text" id="dimes" value="" name="dimes"disabled>
+                </div>
+                <div class="required-container">
+                    <label>Nickels: </label>
+                    <input type="text" id="nickels" value="" name="nickels" disabled>
+                </div>
+                
+                <div class="required-container">
+                    <label>Pennies: </label>
+                    <input type="text" id="pennies" value="" name="pennies" disabled>
+                </div>
+            </fieldset>
+		</main>
+</body>
+<script src="../js/calculator.js"></script>
+
+

@@ -1,0 +1,320 @@
+body{
+    font-family:Arial, Helvetica, sans-serif,"sans serif";
+    font-size: 100%;
+    max-width: 1024px;
+    width: 95%;
+    margin: 2em auto;
+    border: 3px solid steelblue;
+    border-radius: 20px;
+    
+    box-shadow: 0px 0px 2cap black;
+    }
+    a{
+        font-weight: bolder;
+    }
+    li{
+        margin-left: 1em;
+        list-style-type: none;
+    }
+    li a{
+        list-style-type: none;
+        text-decoration: none;
+        margin-left: 1em;
+        margin-bottom: .5em;
+        border-radius: 20px;
+        display: flex;
+        width: 15em;
+        color: black;
+        background-color: #ff8200;
+        padding: .25em 1.5em;
+    }
+    span{
+        color: red;
+    }
+fieldset section div label{
+    width: 150px;
+}
+
+    header{
+        background-image: linear-gradient(to bottom,white 20%, lightsteelblue 100%);
+        text-indent: 5%;
+        border-bottom: 2px solid steelblue;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 1em;
+    }
+    #nav_menu ul {
+        list-style: none;
+        /* position: relative; */
+    }
+    #nav_menu ul ul li{
+        float: none;
+    }
+    #nav_menu ul li a{
+        padding: 0;
+        display: block;
+        background-color: steelblue;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    #nav_menu ul li {
+        float: left;
+        width: 31.5%;
+    }
+    #nav_menu ul li.last {
+        width: 20.0025%;
+    }
+    
+    header img{
+        float: left;
+    }
+    #nav_menu{
+        clear: both;
+    }
+   p{
+    margin-top: 2em;
+    
+   }
+   
+   div{
+    margin-left: 2em;
+    margin-bottom: 2em;
+   }
+    header h2 {
+        color:white;
+        font-style: italic;
+        text-shadow: 2px 2px 2px steelblue;
+        font-size: 2.5em;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        animation: moveright 3s ease-in-out 2s infinite alternate;
+    }
+    @keyframes moveright {
+        from {
+            margin-left: 20%;
+            color: white;
+            }
+        to {
+            margin-left: 60%;
+            color: #ff8200;
+            }
+    }
+    
+    h1{
+        font-size: 160%;
+    
+    }
+    
+    h2{
+        font-size: 130%;
+    }
+    h3{
+        font-size: 110%;
+    }
+    
+     #nav_menu li a:link, #nav_menu li a:visited{
+    
+        color: white;
+    }
+    #nav_menu ul li:hover > ul{
+        display: block;
+    }
+    #nav_menu >ul ::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    #nav_menu ul{
+        margin: 0;
+        padding: 0;
+    }
+    #nav_menu ul li a {
+        text-align: center;
+        display: block;
+        padding: .7em;
+        background-color: steelblue;
+        color: white;
+    }
+    #nav_menu ul li a:hover{
+        text-decoration: none;
+        color: black;
+    }
+    #nav_menu ul li a:hover,#nav_menu ul li a:focus{
+        background-color: lightsteelblue;
+    }
+    #nav_menu ul li:hover ul {
+        width: 100%;
+    }
+    #nav_menu ul li a.current{
+        color: black;
+    } 
+    a:focus{
+        color: steelblue;
+    }
+    aside a:link, aside a:visited{
+        color: steelblue;
+        font-weight: bold;
+    }
+    aside a:hover,aside a:focus{
+        color: maroon;
+    }
+    aside {
+        padding-left: 1%;
+        width: 27.222%;
+        float: left;
+    }
+    section{
+        width: 665px;
+        float: right;
+        padding: 6.375px 6.375px 0 3.3333%;
+    }
+    footer{
+        clear: both;
+        margin: 0%;
+        background-color: steelblue;
+        border: 3px solid steelblue;
+       
+    }
+    input[type="date" i]{
+        width: 123px;
+        margin-left: 4px;
+    }
+    input[type="button" i] {
+        width: 129px;
+        margin-left: 11.5em;
+    }
+    
+    input[type="text" i]{
+        width: 120px;
+        margin-left: 4px;
+    }
+    
+    select{
+        margin-left: 4px;
+        width: 128px;
+    }
+    label{
+        float: left;
+        width: 15em;
+        text-align: right;
+        
+    }
+    #copyright{
+        font-size: 80%;
+        color: white;
+        text-align: center;
+    }
+    #mobile_menu{
+        display: none;
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: lightsteelblue;
+    }
+    #mobile_menu a{
+        background-color: steelblue;
+    }
+    fieldset{
+        border-radius: 20px;
+        margin: 1em;
+    }
+    fieldset div{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    fieldset legend{
+        text-align: center;
+       border-radius: 20px;
+        background-color: gray;
+        color: white;
+        padding: 5px 10px; 
+        margin-bottom: .75em;
+      }
+    
+    @media only screen and (max-width: 900px){
+        body{
+            font-size: 90%;
+            box-shadow: none;
+            margin-top: 6.375px;
+            margin-bottom: 6.375px;
+        }
+    }
+    
+    
+    @media only screen and (max-width: 767px){
+        label {
+            text-align: left;
+        }
+        select {
+            margin-left: 0;
+        }
+        input[type="text" i] {
+            margin-left: 0;
+        }
+        input[type="date" i] {
+            margin-left: 0;
+        }
+        input[type="button" i] {
+            margin-left: 0;
+        }
+        #nav_menu{
+            display: none;
+        }
+        #mobile_menu{
+            display: block;
+        }
+        .slicknav_menu, .slicknav_btn{
+            background: steelblue !important;
+            padding: 3px !important;
+        }
+       
+        header h2 {
+            font-size: 200%;
+        } 
+        section{
+            float: none;
+            width: 93.3334%;
+        }
+        aside{
+            float: none;
+            width: 93.3334%;
+            padding-top: 0;
+            padding-bottom: 1.1562em;
+        }
+    }
+    
+    @media only screen and (max-width: 497px){
+        header h2 {
+            font-size: 180%;
+        }
+        header h3 {
+            font-size: 115%;
+        }
+        section p{
+            font-size: 95%;
+        }
+    }
+    footer p a{
+        color: maroon;
+    }
+    footer a{
+         font-weight: bold;
+    }
+    footer .foot { 
+       
+        text-align: center;
+        color: white;
+    }
+    footer .foot :hover{
+        color: black;
+    
+    }
+    footer .foot :visited{
+        color: #ff8200;
+    }
+    
+    
+    
+    
+    
+    
+    

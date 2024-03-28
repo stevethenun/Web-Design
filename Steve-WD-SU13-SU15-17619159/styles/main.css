@@ -1,0 +1,248 @@
+body{
+font-family:Arial, Helvetica, sans-serif,"sans serif";
+font-size: 100%;
+max-width: 1024px;
+width: 95%;
+margin: 2em auto;
+border: 3px solid steelblue;
+box-shadow: 0px 0px 2cap black;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+header{
+    background-image: linear-gradient(to bottom,white 0%, lightsteelblue 100%);
+    text-indent: 5%;
+    border-bottom: 2px solid steelblue;
+    padding: 1em;
+}
+#nav_menu ul {
+    list-style: none;
+    position: relative;
+}
+#nav_menu ul ul li{
+    float: none;
+}
+#nav_menu ul li a{
+    padding: 0;
+    display: block;
+    background-color: steelblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li.last {
+    width: 20.0025%;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+header img{
+    float: left;
+}
+#nav_menu{
+    clear: left;
+    border-bottom: 2px solid steelblue;
+}
+h3 .icon{
+    transition: width 2s ease;
+}
+h3 .icon:hover{
+    width: 3em;
+}
+header h2 {
+    color:steelblue;
+    font-style: italic;
+    text-shadow: 2px 2px 2px steelblue;
+    font-size: 2.5em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    animation: moveright 3s ease-in-out 2s infinite alternate;
+}
+@keyframes moveright {
+    from {
+        margin-left: 20%;
+        color: steelblue;
+        }
+    to {
+        margin-left: 60%;
+        color: #ff8200;
+        }
+}
+header h3{
+    margin-top: .5%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+}
+h1{font-size: 160%;
+
+}
+aside h2 {
+    color: maroon;
+}
+h2{
+    font-size: 130%;
+}
+h3{
+    font-size: 110%;
+}
+main a:link, main a:visited{
+    color: maroon;
+}
+#nav_menu li a:link, #nav_menu li a:visited{
+
+    color: white;
+}
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+#nav_menu >ul ::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul{
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: .7em;
+    background-color: steelblue;
+    color: white;
+}
+#nav_menu ul li a:hover{
+    text-decoration: none;
+    color: black;
+}
+#nav_menu ul li a:hover,#nav_menu ul li a:focus{
+    background-color: lightsteelblue;
+}
+#nav_menu ul li:hover ul {
+    width: 100%;
+}
+#nav_menu ul li a.current{
+    color: black;
+}
+a:focus{
+    color: steelblue;
+}
+aside a:link, aside a:visited{
+    color: steelblue;
+    font-weight: bold;
+}
+aside a:hover,aside a:focus{
+    color: maroon;
+}
+aside {
+    padding-left: 1%;
+    width: 27.222%;
+    float: left;
+}
+section{
+    width: 665px;
+    float: right;
+    padding: 6.375px 6.375px 0 3.3333%;
+}
+footer{
+    clear: both;
+    margin: 0%;
+    background-color: steelblue;
+    border: 3px solid steelblue;
+   
+}
+#copyright{
+    font-size: 80%;
+    color: white;
+    text-align: center;
+}
+#mobile_menu{
+    display: none;
+}
+#mobile_menu a:hover, #mobile_menu a:focus {
+    color: lightsteelblue;
+}
+#mobile_menu a{
+    background-color: steelblue;
+}
+
+@media only screen and (max-width: 900px){
+    body{
+        font-size: 90%;
+        box-shadow: none;
+        margin-top: 6.375px;
+        margin-bottom: 6.375px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    #nav_menu{
+        display: none;
+    }
+    #mobile_menu{
+        display: block;
+    }
+    .slicknav_menu, .slicknav_btn{
+        background: steelblue !important;
+        padding: 3px !important;
+    }
+   
+    header h2 {
+        font-size: 200%;
+    } 
+    section{
+        float: none;
+        width: 93.3334%;
+    }
+    aside{
+        float: none;
+        width: 93.3334%;
+        padding-top: 0;
+        padding-bottom: 1.1562em;
+    }
+}
+
+@media only screen and (max-width: 497px){
+    header h2 {
+        font-size: 180%;
+    }
+    header h3 {
+        font-size: 115%;
+    }
+    section p{
+        font-size: 95%;
+    }
+}
+footer p a{
+    color: maroon;
+}
+footer a{
+     font-weight: bold;
+}
+footer .foot { 
+   
+    text-align: center;
+    color: white;
+}
+footer .foot :hover{
+    color: black;
+
+}
+footer .foot :visited{
+    color: #ff8200;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles/slicknav.css"> 
+		<link rel="stylesheet" href="../styles/stress.css">
+		<link rel="shortcut icon" href="../images/favicon.ico">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+		<title>Shape Up! | Stress</title>
+	</head>
+
+	<body>
+		<header>
+			<a href="../index.html"><img src="../images/shape_up_logo.png" alt="shape up logo"></a>
+			<h2>Shape Up!</h2>
+			<h3>Find the best fit for you</h3>
+			
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id = nav_menu>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../strength/index.html">Strength Training</a></li>
+				<li><a href="../cardio/index.html">Cardio Exercises</a></li>
+				<li><a href="stress/index.html" class="current">Stress Relief</a>
+				<ul>
+					<li><a href="index.html">What is Stress?</a></li>
+					<li><a href="tips.html">5 helpful Tips</a></li>
+					<li><a href="meditate.html">Meditation</a></li>
+					<li><a href="vipassana.html">Vipassana</a></li>
+				</ul>
+			</li>
+				<li class="last"><a href="../diet/index.html">Healthy Diets</a>
+					<ul>
+						<li><a href="../diet/index.html">Why a Healthy Diet?</a></li>
+						<li><a href="../diet/meals.html">Plan Your Meals</a></li>
+						<li><a href="../diet/calories.html">Count Your Calories</a></li>
+						<li><a href="../diet/bmi.html">Calculate Your BMI</a></li>
+					</ul>
+				</li>	
+			</ul>
+			</nav>
+		<main>
+			<section>
+				<h1>Stress Relief</h1>
+				<p>We all encounter stress at one time or another. So it's important to be able to recognize stress and learn how to deal with it.</p>
+				<h2>What is stress?</h2>
+				<p>Stress is the feeling that people have when they are overloaded and struggling to cope with demands. Anything that poses a real or perceived challenge or threat to a person's well-being can cause stress.</p>
+				<p>Stress can also be a motivator. It can be essential to survival. The &quot;fight-or-flight&quot; mechanism helps us know when and how to respond to danger. But when this mechanism is triggered too easily, or when there are too many stressors at one time, it can become harmful to a person's mental and physical health.</p>
+				<h3>How to manage your stress</h3>
+				<p>To help manage stress, try the following:
+					<ul>
+						<li>Take a break from what you're doing</li>
+						<li>Exercise on a regular basis</li>
+						<li>Take time to smile and laugh</li>
+						<li>Get support from family and friends</li>
+						<li>Meditate</li>
+					</ul>
+				</p>
+			</section>
+			<aside>
+				<h2>Additional resources</h2>
+				<ul>
+					<li><a href="https://www.cdc.gov/physicalactivity/basics/adults/index.htm" target="_blank" >Physical Activity</a></li>
+					<li><a href="https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/stretching-and-flexibility-exercises" target="_blank" >Stretching Ecercises</a></li>
+					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670" target="_blank" >Strength Training</a></li>
+					<li><a href="https://utswmed.org/medblog/heart-cardio-workouts/" target="_blank" >Cardiovascular Exercise</a></li>
+					<li><a href="https://www.cdc.gov/healthyschools/bam/cards/yoga.html" target="_blank" >Yoga Workout</a></li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p id = copyright>&copy;2023 Shape up! | <i>Steven Nunley</i></p>
+		</footer>
+	</body>
+</html>
