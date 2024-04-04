@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
  
-    <title>Steve-A03</title>
+    <title>Steve-A05</title>
 </head>
 <body>
     <header>
@@ -18,6 +18,7 @@
         </nav>
     </header>
     <main>
+        <form action="../pages/results.html">
         <fieldset>
             <legend>Genral Information</legend>
             <div>
@@ -27,8 +28,7 @@
             </div>
             <div>
                 <label for="nights">Nights: </label>
-                <input type="text" id="nights">
-                <span id="nights">*</span>
+                <input type="number" id="nights" value="1" min="1">
             </div>
             <div>
                 <label for="adults">Adults:</label>
@@ -42,6 +42,7 @@
             <div>
                 <label for="children">Children:</label>
                 <select name="children" id="children">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -52,21 +53,21 @@
         <fieldset>
             <legend>Preferences</legend>
             <div>
-                <label for="roomType">Room Type:</label>
-                <input type="radio" name="preferences" id="active1">
-                <label for="active1">Standard</label>
-                <input type="radio" name="preferences" id="active2">
-                <label for="active2">Business</label>
-                <input type="radio" name="preferences" id="active3">
-                <label for="active3">Suite</label>
+                <label>Room Type:</label>
+                <input type="radio" name="room" id="standard" value="standard" checked>
+                <label for="standard">Standard</label>
+                <input type="radio" name="room" id="business" value="business">
+                <label for="business">Business</label>
+                <input type="radio" name="room" id="suite" value="suite">
+                <label for="suite">Suite</label>
             </div>
             <div>
-                <label for="">Bed Type:</label>
-                <input type="radio" name="bt" id="bt1">
+                <label>Bed Type:</label>
+                <input type="radio" name="bed" id="king" value="king">
                 <label for="king">King</label>
-                <input type="radio" name="bt" id="bt2">
+                <input type="radio" name="bed" id="queen" value="queen" checked>
                 <label for="queen">Queen</label> 
-                <input type="radio" name="bt" id="bt3">
+                <input type="radio" name="bed" id="double" value="double">
                 <label for="double">Double</label>  
             </div>
             <div>
@@ -80,24 +81,25 @@
                 <div>
                     <label for="nights">Name:</label>
                     <input type="text" id="name">
-                    <span id="nights">*</span>
+                    <span id="nameError">*</span>
                 </div>
                 <div>
                     <label for="nights">Email:</label>
-                    <input type="text" id="email" placeholder="email@email.com">
-                    <span id="nights">*</span>
+                    <input type="email" id="email" placeholder="email@email.com">
+                    <span id="emailError">*</span>
                 </div>
                 <div> 
                     <label for="nights">Phone:</label>
-                    <input type="text" id="phone" placeholder="999-999-9999">
-                    <span id="nights">*</span>
+                    <input type="tel" id="phone" placeholder="999-999-9999">
+                    <span id="phoneError">*</span>
                 </div>
             </fieldset>
             <div>
-                <input type="button" id="submit"  value="Submit Request">
+                <input type="button" id="processInformation"  value="Submit Request">
             </div>
-            
+            </form>
 
         </section>
     </main>
 </body>
+<script src="../js/reseverations.js"></script>
