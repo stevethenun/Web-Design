@@ -19,45 +19,85 @@
     </header>
     <main>
         <fieldset>
-        <section>
-            <div>
-                <label for="email">Email: </label>
-                <input type="text" id="email" placeholder="name@email.com">
-                <span id="emailError">*</span>
-            </div>
+            <legend>Genral Information</legend>
             <div>
                 <label for="date">Arrival Date: </label>
                 <input type="date" name="date" id="date" >
                 <span id="dateError">*</span>
             </div>
             <div>
-                <label for="purchase_amount">Purchase Amount: </label>
-                <input type="text" name="purchase_amount" id="purchase_amount" placeholder="22.22">
-                <span name ="amountError" id="amountError">*</span>
+                <label for="nights">Nights: </label>
+                <input type="text" id="nights">
+                <span id="nights">*</span>
             </div>
             <div>
-                <label for="discount_type">Type of Discount:</label>
-                <select name="discount_type" id="discount_type">
-                    <option value="none">None</option>
-                    <option value="military">Military</option>
-                    <option value="student">Student</option>
-                    <option value="aarp">AARP</option>
+                <label for="adults">Adults:</label>
+                <select name="adults" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </div>
             <div>
-                <input type="button" id="processInformation"  value="Process">
-            </div>
-            <div>
-                <input type="button" id="reset"  value="Reset">
-            </div>
-            <div>
-                <label for="discounted_price">Discounted Price:</label>
-                <input type="text" name="discounted_price" id="discounted_price" readonly>
-                <span></span>
+                <label for="children">Children:</label>
+                <select name="children" id="children">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
             </div>
         </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <div>
+                <label for="roomType">Room Type:</label>
+                <input type="radio" name="preferences" id="active1">
+                <label for="active1">Standard</label>
+                <input type="radio" name="preferences" id="active2">
+                <label for="active2">Business</label>
+                <input type="radio" name="preferences" id="active3">
+                <label for="active3">Suite</label>
+            </div>
+            <div>
+                <label for="">Bed Type:</label>
+                <input type="radio" name="bt" id="bt1">
+                <label for="king">King</label>
+                <input type="radio" name="bt" id="bt2">
+                <label for="queen">Queen</label> 
+                <input type="radio" name="bt" id="bt3">
+                <label for="double">Double</label>  
+            </div>
+            <div>
+                <label for="">Early Check-in:</label>
+                <input type="checkbox" name="earlyCheck" id="earlyCheck">
+                <label for="active1"></label>
+            </div>
+        </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="nights">Name:</label>
+                    <input type="text" id="name">
+                    <span id="nights">*</span>
+                </div>
+                <div>
+                    <label for="nights">Email:</label>
+                    <input type="text" id="email" placeholder="email@email.com">
+                    <span id="nights">*</span>
+                </div>
+                <div> 
+                    <label for="nights">Phone:</label>
+                    <input type="text" id="phone" placeholder="999-999-9999">
+                    <span id="nights">*</span>
+                </div>
+            </fieldset>
+            <div>
+                <input type="button" id="submit"  value="Submit Request">
+            </div>
+            
 
         </section>
     </main>
 </body>
-<script src="../js/purchase.js"></script>
