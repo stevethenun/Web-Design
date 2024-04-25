@@ -1,0 +1,25 @@
+--------------------------------------------------
+FP 04
+--------------------------------------------------
+Time on this part:  3 hours
+Total for the project: 15 hours
+
+Questions:
+Are you pleased with your progress so far?
+	very pleased. This is so much easier than JAVA. I really enjoy working with html and css.
+Is there anything you need from me?
+    ALL THE ANSWERS!! just kidding.. no i dont need anythiong. thank you for asking.
+Feedback/Fixes:
+Rene: 	
+        Think about making your sections narrower or adding some padding to move their content to the right.
+
+        Remove the empty aside element on index.html. 
+
+        Where is your feedback document that should include time spent on this assignment.
+
+Fixes:  
+        I added padding to the sections top move them off the left side. 
+
+        I removed the empty aside.
+
+        I added my feedback document.

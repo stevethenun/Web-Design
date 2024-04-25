@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+ 
+    <title>Steve-A06</title>
+</head>
+<body>
+    <header>
+        <h1>Use a Test array</h1>
+    
+        <nav id="mobile_menu"></nav>
+        <nav id = nav_menu>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/slideshow.html" >SlideShow</a></li>
+                <li><a href="../pages/scores.html"class="current">Grades</a></li>
+                <li><a href="../pages/expand.html">Expand</a></li> 
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <fieldset>
+        <div class="input-container">
+            <div class="required-container">
+                <label>First Name: </label>
+                <input type="text" id="first_name" value="" name="first_name">
+            </div>
+            <div class="required-container">
+                <label>Last Name: </label>
+                <input type="text" id="last_name" value="" name="last_name">
+            </div>
+            <div>
+                <label>Score: </label>
+                <input type="text" id="score" value="" name="score">
+            </div>
+            <div>
+                <input class="button" type="submit" id = "addToArray"  value="Add to Array" /><br>
+                <input class="button" type="submit" id = "displayScores" value="Display Scores" /><br>
+                <input class="button" type="submit" id = "clear" value="Clear" />
+                <input class="button" type="submit" id = "sort" value="Sort by last Name"/>
+            </div>
+        </div>
+            <div class="textarea-container">
+                <textarea name="scores" id="scoresTextarea" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/grades.js"></script>
+
+    </main> 
+</body>
+</html>

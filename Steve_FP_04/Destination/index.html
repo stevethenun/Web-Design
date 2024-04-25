@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <link rel="stylesheet" href="../styles/destinations.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Final Project 02</title>
+    </head>
+    <body background="../images/sunset.png">
+        <header>
+            <H1>Let's find some new adventures!</H1>
+        </header>
+            <nav class="nav_menu">
+                <div class="nav_div">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../PackList/index.html">Packing list</a></li>
+                        <li><a href="../Budget/index.html">Budget</a></li>
+                        <li><a href="../Destination/index.html" class="current" >Destinations</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <section>
+                    <h2>Click a spot on the Great Loop that you might want to visit!</h2>
+                </section>
+                    <img class="img" src="../images/Map.jpg" alt="map of the great loop" usemap="#loop">
+                    <map name="loop">
+                        <area shape="poly" coords="71,144,63,11,312,0,341,0,347,79,175,143" 
+                        href="../Destination/greatlakes.html" alt="great lakes">
+                        <area shape="poly" coords="325,85,272,160,204,377,321,382,349,187,347,80" 
+                        href="../Destination/eastcoast.html" alt="East Coast USA">
+                        <area shape="poly" coords="204,380,93,406,53,410,44,527,290,527,318,383" 
+                        href="../Destination/gulf.html" alt="Gulf Coast USA">
+                        <area shape="poly" coords="113,396,53,409,43,406,31,430,0,432,0,147,70,145,119,174,132,386" 
+                        href="../Destination/rivers.html" alt="miss/tenn rivers">
+                    </map>
+            </main>
+        <footer>
+            <p id = copyright>&copy;2024 The Great Loop Directory | <i>Steven Nunley</i></p>
+        </footer>
+    </body>
+    

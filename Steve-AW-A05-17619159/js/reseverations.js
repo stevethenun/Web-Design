@@ -16,7 +16,6 @@ const checkIfExists = (text,name) =>{
                 throw new Error ("Phone is required");       
         }
     }
-
     return text;
 }
 
